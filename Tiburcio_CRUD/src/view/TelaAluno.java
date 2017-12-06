@@ -46,6 +46,7 @@ import java.awt.ScrollPane;
 import javax.swing.JTree;
 import javax.swing.ImageIcon;
 import java.awt.Dialog.ModalExclusionType;
+import javax.swing.UIManager;
 
 public class TelaAluno extends JFrame {
 
@@ -152,7 +153,7 @@ public class TelaAluno extends JFrame {
 				
 			});
 		btnGravar.setForeground(Color.BLACK);
-		btnGravar.setBackground(new Color(102, 205, 170));
+		btnGravar.setBackground(UIManager.getColor("Button.background"));
 		btnGravar.setBounds(107, 464, 87, 20);
 		contentPane.add(btnGravar);
 		
@@ -312,7 +313,7 @@ public class TelaAluno extends JFrame {
 						}
 					}
 				});
-				btnRemover.setBackground(Color.RED);
+				btnRemover.setBackground(UIManager.getColor("Button.background"));
 				btnRemover.setBounds(10, 464, 87, 20);
 				contentPane.add(btnRemover);		
 	}

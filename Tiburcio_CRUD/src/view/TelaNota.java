@@ -116,8 +116,6 @@ public class TelaNota extends JFrame {
 		btnCancelar = new JButton("Voltar");
 		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Menu_Principal mp= new Menu_Principal();
-				mp.setVisible(true);
 				dispose();
 			}
 		});

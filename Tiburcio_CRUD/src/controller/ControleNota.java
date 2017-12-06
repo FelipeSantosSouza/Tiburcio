@@ -33,7 +33,7 @@ public class ControleNota implements TableModel{
 			ControleMateria cm = new ControleMateria();
 			pesos = cm.pesos(id);
 			media = (float) (((n.getN1() * pesos[0]) + (n.getN2()*pesos[1]))/10); 
-			System.out.println(media);
+			
 		}
 		else {
 			throw new NullPointerException();
