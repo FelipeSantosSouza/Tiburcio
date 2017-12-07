@@ -29,7 +29,7 @@ Opções de funcionamentos:
 		
 	-Importe a pasta Tiburcio_Crud para o eclipse
 		
-	-Provavelmente será necessario alterar a senha na Classe DBUtil no pacote DAO na linha 21, para os dados referentes a sua 		instalação (usuário e senha).
+	-Provavelmente será necessario alterar a senha na Classe DBUtil no pacote DAO na linha 21, para os dados referentes a sua instalação (usuário e senha).
 			
 			con = DriverManager.getConnection(url, "seu usuario", "senha");
 
