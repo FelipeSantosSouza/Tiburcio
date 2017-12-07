@@ -5,22 +5,29 @@ Tiburcio_CRUD, é uma ferramenta crud que busca cadastrar as principais entidade
 
 Veja uma demonstração do funcionamento em:
 	https://www.youtube.com/watch?v=pKfI4NBMrGM&feature=youtu.be
+	
+Opções de funcionamentos:
 
-Instale o MySql Server
+1- Utilizando o servidor web
+	
+	-Utilize o Tiburcio_CRUD_OnlineServer.jar
+	
+2- Utilizando o servidor local
 
-Abra o cmd
-Insira:
-	cd C:\Program Files\MySQL\MySQL Server 5.6\bin 
-		(aplicativo feito na versão 5.6, mude para a sua versão no nome da pasta)
+	-Instale o MySql Server
 
-	mysql -u root -p
+	-Abra o cmd
+		Insira:
+		cd C:\Program Files\MySQL\MySQL Server 5.6\bin 
+			(aplicativo feito na versão 5.6, mude para a sua versão no nome da pasta)
 
-	insira a senha fornecida durante a instalação
+		mysql -u root -p
 
-	Insira o conteúdo de Script.sql, comando por comando.
+		insira a senha fornecida durante a instalação
+
+		Insira o conteúdo de Script.sql, comando por comando.
 
 
 
 Att. Felipe Santos de Souza
-
-	Contato: felipesnt13@gmail.com
+	Em caso de dúvidas entrar em contato com: felipesnt13@gmail.com,
