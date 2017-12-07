@@ -40,7 +40,8 @@ public class AlunoDAO implements TblDAO{
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				JOptionPane.showMessageDialog(null, "Erro no Sql, verifique o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 			}
 	
 		
@@ -63,7 +64,8 @@ public class AlunoDAO implements TblDAO{
 				lista.add( a );
 			}	
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 		}
 		return lista;
 	}
@@ -83,7 +85,8 @@ public class AlunoDAO implements TblDAO{
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 			}
 
 		}

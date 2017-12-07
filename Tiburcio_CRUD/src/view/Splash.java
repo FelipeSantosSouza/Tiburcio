@@ -13,6 +13,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JLabel;
 import javax.swing.JTextPane;
 import java.awt.Font;
+import java.awt.Toolkit;
 
 public class Splash extends JFrame {
 
@@ -46,6 +47,7 @@ public class Splash extends JFrame {
 	 * Create the frame.
 	 */
 	public Splash() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Splash.class.getResource("/view/icon.jpg")));
 		setRootPaneCheckingEnabled(false);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

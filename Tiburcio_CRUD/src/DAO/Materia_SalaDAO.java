@@ -41,7 +41,8 @@ public class Materia_SalaDAO implements TblDAO {
 			JOptionPane.showMessageDialog(null, "Numero ja existe", "ERRO", JOptionPane.ERROR_MESSAGE);
 		}
 		 catch (SQLException e) {
-				e.printStackTrace();
+				JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 			}
 	
 		
@@ -69,7 +70,8 @@ public class Materia_SalaDAO implements TblDAO {
 				lista.add(m);
 			}	
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 		}
 		return lista;
 	}
@@ -96,7 +98,8 @@ public class Materia_SalaDAO implements TblDAO {
 	}
 	 catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 		}
 
 	}

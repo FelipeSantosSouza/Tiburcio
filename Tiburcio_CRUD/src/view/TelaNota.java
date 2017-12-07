@@ -172,7 +172,8 @@ public class TelaNota extends JFrame {
 					table.repaint();
 				}
 				catch(NullPointerException | NumberFormatException  e){
-					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Erro no Cadastro, verifique os campos", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 				}
 			}
 		});

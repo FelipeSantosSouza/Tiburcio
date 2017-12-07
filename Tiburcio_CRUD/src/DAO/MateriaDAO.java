@@ -35,15 +35,15 @@ public class MateriaDAO implements TblDAO {
 		} 
 		catch(com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException e) {
 			JOptionPane.showMessageDialog(null, "Aluno ja esta cadastrado na sala", "ERRO", JOptionPane.ERROR_MESSAGE);
-			e.printStackTrace();
 		}
 		catch(com.mysql.jdbc.MysqlDataTruncation e) {
 			JOptionPane.showMessageDialog(null, "Código deve conter até 3 letras", "ERRO", JOptionPane.ERROR_MESSAGE);
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+		}
+		
 		
 	}
 	//Retorna uma lista carregada com dados do banco
@@ -62,9 +62,10 @@ public class MateriaDAO implements TblDAO {
 				m.setPesoN1(rs.getFloat("PesoN1"));
 				m.setPesoN2(rs.getFloat("PesoN2"));				
 				lista.add(m);
-			}	
+			}
+		
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
 		}
 		return lista;
 		
@@ -83,9 +84,10 @@ public class MateriaDAO implements TblDAO {
 				Materia m = new Materia();
 				pesos[0]=( rs.getFloat("PesoN1"));
 				pesos[1]=(rs.getFloat("PesoN2"));			
-			}	
+			}
+			
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
 		}
 		return pesos;
 		
@@ -108,8 +110,8 @@ public class MateriaDAO implements TblDAO {
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+		}
 
 		}
 

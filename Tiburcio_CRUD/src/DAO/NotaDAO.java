@@ -39,13 +39,15 @@ public class NotaDAO implements TblDAO{
 			stmt.setInt(8, n.getMs().getS().getnum());
 			stmt.executeUpdate();
 			JOptionPane.showMessageDialog(null,"Cadastrado com sucesso!");
+			
 		} 
 		catch(com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException e) {
 			JOptionPane.showMessageDialog(null, "Aluno ja esta cadastrado na sala", "ERRO", JOptionPane.ERROR_MESSAGE);
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 			}
 		}
 	@Override
@@ -79,9 +81,11 @@ public class NotaDAO implements TblDAO{
 				n.setMedia(Float.parseFloat(rs.getString("Media")));
 				nota.add(n);
 				
-			}	
+			}
+			
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 		}
 		return nota;
 		
@@ -107,7 +111,7 @@ public class NotaDAO implements TblDAO{
 		}
 		 catch (SQLException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	@Override

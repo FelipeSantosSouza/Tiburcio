@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 public class DBUtil {
 
 	private static DBUtil instancia;
@@ -16,9 +18,10 @@ public class DBUtil {
 			//Altere o terceiro campo para sua senha root do mysql, se necessario
 			con = DriverManager.getConnection(url, "root", "root");
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Cadastro, verifique os campos", "ERRO", JOptionPane.ERROR_MESSAGE);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro no Sql, verifique a senha, ou o banco", "ERRO", JOptionPane.ERROR_MESSAGE);
+
 		}
 		
 	}
