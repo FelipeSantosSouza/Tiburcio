@@ -26,6 +26,11 @@ Opções de funcionamentos:
 		insira a senha fornecida durante a instalação
 
 		Insira o conteúdo de Script.sql, comando por comando.
+		
+	-Provavelmente será necessario alterar a senha na Classe DBUtil no pacote DAO na linha 21
+			
+			con = DriverManager.getConnection(url, "seu usuario", "senha");
+
 
 
 
