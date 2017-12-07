@@ -15,12 +15,13 @@ Insira:
 
 	insira a senha fornecida durante a instalação
 
-	Insira o conteúdo de Script.sql, comando por comando de preferência.
+	Insira o conteúdo de Script.sql, comando por comando.
 
 
 
 Att, Felipe Santos de Souza
 
 	Contato: felipesnt13@gmail.com
-		ou pelo R.A: 1614444
+
+
 	
