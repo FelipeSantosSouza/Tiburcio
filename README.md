@@ -12,6 +12,10 @@ Opções de funcionamentos:
 	
 	-Utilize o Tiburcio_CRUD_OnlineServer.jar
 	
+	-Certifique-se que a internet esteja ativada
+	
+	-Configurações de firewall podem afetar o funcionamento
+	
 2- Utilizando o servidor local
 
 	-Instale o MySql Server
