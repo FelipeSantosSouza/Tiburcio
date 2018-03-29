@@ -6,7 +6,7 @@ Tiburcio_CRUD, é uma ferramenta crud que busca cadastrar as principais entidade
 Veja uma demonstração do funcionamento em:
 	https://www.youtube.com/watch?v=pKfI4NBMrGM&feature=youtu.be
 	
-Opções de funcionamentos:
+Opções de funcionamento:
 
 1- Utilizando o servidor web
 	
